@@ -7,4 +7,11 @@ spring:
     config:
       server:
         git:
-          uri:
+          uri: https://github.com/RobinSanMartin/microservicios.git
+          search-paths: config-data
+          username: ${GIT_USER}
+          password: ${GIT_PASS}
+  security:
+    user:
+      name: root
+      password: Admin007
